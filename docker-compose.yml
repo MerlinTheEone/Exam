@@ -1,4 +1,4 @@
-version: '3'
+version: '4'
 
 services:
   nginx-host:
@@ -11,7 +11,7 @@ services:
     - php-host
     deploy: 
       mode: replicated
-      replicas: 3
+      replicas: 1
   php-host:
     build: php/
     ports:
